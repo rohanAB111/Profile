@@ -1,88 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dr. Rohan Appasaheb Borgalli | Academic Profile</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #002b5c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    nav {
+      background: #004a99;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav button {
+      background: none;
+      border: none;
+      color: white;
+      padding: 15px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    nav button:hover {
+      background: #003366;
+    }
+    section {
+      display: none;
+      padding: 20px;
+      border-top: 1px solid #ccc;
+    }
+    section.active {
+      display: block;
+    }
+    footer {
+      background-color: #002b5c;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    h2 {
+      color: #002b5c;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Dr. Rohan Appasaheb Borgalli</h1>
-    <p>Assistant Professor (Selection Grade), EXTC Department, SAKEC</p>
-    <p>Email: <a href="mailto:rohan.borgalli@sakec.ac.in">rohan.borgalli@sakec.ac.in</a></p>
+    <p>Assistant Professor (Selection Grade), EXTC Department, SAKEC, Mumbai</p>
+    <p>Email: <a href="mailto:rohan.borgalli@sakec.ac.in" style="color:#ffc;">rohan.borgalli@sakec.ac.in</a></p>
   </header>
 
   <nav>
-    <ul>
-      <li><a href="#profile">Profile</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#awards">Awards</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <button onclick="showSection('profile')">Profile</button>
+    <button onclick="showSection('education')">Education</button>
+    <button onclick="showSection('experience')">Experience</button>
+    <button onclick="showSection('research')">Research & Publications</button>
+    <button onclick="showSection('awards')">Awards</button>
+    <button onclick="showSection('projects')">Projects</button>
+    <button onclick="showSection('courses')">Courses & Certifications</button>
+    <button onclick="showSection('activities')">Events & FDPs</button>
+    <button onclick="showSection('contact')">Contact</button>
   </nav>
 
   <main>
-    <section id="profile">
+    <section id="profile" class="active">
       <h2>Profile</h2>
-      <p>Dr. Rohan Borgalli is an accomplished academician with 12+ years of teaching and research experience. He holds a PhD in Machine Learning, has published over 20 papers, and guided 20+ UG projects. His interests include AI in healthcare, IoT systems, and signal processing.</p>
+      <p><strong>Date of Birth:</strong> 23/05/1990</p>
+      <p><strong>Languages:</strong> Hindi, Marathi, English, Kannada</p>
+      <p><strong>Mobile:</strong> 9821057992</p>
+      <p><strong>Address:</strong> C-37/70, Mitrata CHS, RSC 14, Gorai 1, Borivli West, Mumbai 400092</p>
+      <p><strong>Areas of Interest:</strong> Machine Learning, Signal Processing, Data Compression & Encryption, IoT, Digital System Design</p>
     </section>
 
     <section id="education">
       <h2>Education</h2>
       <ul>
-        <li>Ph.D. in Electronics Engineering, Mumbai University (2025)</li>
-        <li>M.Tech in Digital Systems, MNNIT Allahabad (2013)</li>
-        <li>B.E. in EXTC, RGIT, Mumbai University (2011)</li>
+        <li>Ph.D. in Electronics Engineering (Machine Learning), Mumbai University, 2025</li>
+        <li>M.Tech in Electronics Engineering (Digital Systems), MNNIT Allahabad, 2013 - Gold Medalist</li>
+        <li>B.E. in Electronics and Telecommunication, RGIT, Mumbai University, 2011</li>
       </ul>
     </section>
 
     <section id="experience">
-      <h2>Experience</h2>
-      <p>Assistant Professor at SAKEC since 2014.</p>
-      <p>Former Lecturer at St. Francis Institute of Technology (2013–2014).</p>
-      <p>Faculty In-Charge, SAKEC-TBI | Member of 15+ Committees | Coordinator of 10+ Events</p>
+      <h2>Teaching & Administrative Experience</h2>
+      <p>Assistant Professor at SAKEC since 2014 with 12+ years total teaching experience.</p>
+      <p>Roles include: Program Coordinator, ISO Coordinator, TBI Incharge, Anti-Ragging Cell Officer, Placement Cell Member, etc.</p>
     </section>
 
     <section id="research">
-      <h2>Publications & Research</h2>
+      <h2>Research & Publications</h2>
+      <p><strong>Books & Book Chapters:</strong></p>
       <ul>
-        <li>Book Chapter: “Learning Framework for Facial Emotion Recognition” (IGI Global, 2023)</li>
-        <li>Journal: The Imaging Science Journal (Taylor & Francis, 2023)</li>
-        <li>IEEE Conference Papers: ICEARS, ICESC, ICCDS, etc.</li>
-        <li>Research Projects: Smart Pothole Detection (Funded), AI in Mental Health</li>
-        <li>Reviewer: Scientific Reports, Applied AI, Cybernetics and Systems</li>
+        <li>Learning Framework for Facial Emotion Recognition – IGI Global, 2023</li>
+        <li>HOPE: Your Mental Health Companion – Springer, 2024</li>
       </ul>
+      <p><strong>Journals:</strong> 10+ peer-reviewed papers including The Imaging Science Journal, Scientific Visualization, IJSIR, IJEM</p>
+      <p><strong>Conferences:</strong> ICEARS, ICESC, ICCCDS, ICPCSN and others</p>
+      <p><strong>Reviewer:</strong> Applied AI, Cybernetics & Systems, Scientific Reports, etc.</p>
     </section>
 
     <section id="awards">
       <h2>Awards</h2>
       <ul>
-        <li>Best Researcher Award, Novel Research Academy, 2023</li>
+        <li>Best Researcher Award – Novel Research Academy, 2023</li>
         <li>IRSD Academic Excellence Award, 2022</li>
-        <li>Best Faculty (Funded Research), CSI TechNext India, 2019</li>
-        <li>Gold Medalist, M.Tech, MNNIT Allahabad, 2013</li>
+        <li>Best Faculty Award – CSI TechNext, 2019</li>
+        <li>Gold Medalist – M.Tech, MNNIT, 2013</li>
       </ul>
     </section>
 
     <section id="projects">
-      <h2>Guided Projects</h2>
-      <p>Guided 20+ undergraduate projects in domains like AI, ML, IoT, and Digital Systems. Mentored 3 incubated startups at SAKEC-TBI in EdTech, FinTech, and AI.</p>
+      <h2>Projects & Startups</h2>
+      <p>Guided 20+ UG projects in AI, IoT, DL, and Healthcare systems.</p>
+      <p>Incubated 3 startups under SAKEC-TBI (EdTech, FinTech, AI-Tech).</p>
+    </section>
+
+    <section id="courses">
+      <h2>Courses & Certifications</h2>
+      <p><strong>NPTEL:</strong> Deep Learning (Top 2%), Digital Circuits (Top 1%), Medical Image Analysis (92%)</p>
+      <p><strong>Coursera:</strong> CNNs by deeplearning.ai, Emotion AI, Facial Expression Recognition using Keras</p>
+      <p><strong>Other Certifications:</strong> Cisco, Infosys Springboard, FutureSkills</p>
+    </section>
+
+    <section id="activities">
+      <h2>Events, FDPs, and Training</h2>
+      <p>Organized/Coordinated 20+ FDPs, STTPs, Workshops including:</p>
+      <ul>
+        <li>FDP on AI Evolution: Foundations to Generative AI, Jan 2024</li>
+        <li>Winter Internship (Ansys HFSS & VNA), Dec 2024 - Jan 2025</li>
+        <li>STTP on Advanced VLSI Design, 2018</li>
+      </ul>
+      <p>Attended multiple AICTE, NPTEL, and QIP certified programs including High Performance Computing (COEP) and Advanced ML (IITB)</p>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:rohanborgalli111@gmail.com">rohanborgalli111@gmail.com</a></p>
       <p>LinkedIn: <a href="https://linkedin.com/in/rohanborgalli" target="_blank">linkedin.com/in/rohanborgalli</a></p>
-      <p>Location: Mumbai, India</p>
+      <p>Phone: 9821057992</p>
+      <p>Address: Borivli West, Mumbai, India</p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Dr. Rohan Appasaheb Borgalli | Designed by RAB</p>
+    <p>&copy; 2025 Dr. Rohan Appasaheb Borgalli. All rights reserved.</p>
   </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
 </body>
 </html>
