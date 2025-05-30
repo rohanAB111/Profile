@@ -2,47 +2,170 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Digital System Design – Open Source Lectures</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dr. Rohan Appasaheb Borgalli | Academic Profile</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
+      margin: 0; padding: 0;
+      background-color: #f9f9f9; color: #333;
+    }
+    header {
+      background-color: #002b5c; color: #fff;
       padding: 20px;
     }
-    h1, h2 {
-      color: #2c3e50;
+    .header-container {
+      display: flex; flex-wrap: wrap;
+      align-items: center; justify-content: space-between;
     }
-    .section {
+    .header-text { flex: 1 1 60%; min-width: 250px; }
+    .header-text h1 { margin: 0 0 10px; }
+    .header-text a { color: #ffc; text-decoration: none; }
+    .header-image { flex: 1 1 30%; text-align: right; min-width: 100px; }
+    .header-image img {
+      max-width: 120px; height: auto;
+      border-radius: 10px;
+    }
+    nav {
+      background: #004a99;
+      display: flex; flex-wrap: wrap; justify-content: center;
+    }
+    nav button {
+      background: none; border: none;
+      color: white; padding: 15px;
+      cursor: pointer; font-size: 16px;
+    }
+    nav button:hover { background: #003366; }
+    section {
+      display: none; padding: 20px;
+      border-top: 1px solid #ccc;
       background: #fff;
-      padding: 15px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    .videos {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
+    section.active { display: block; }
+    h2 { color: #002b5c; }
+    a { color: #004a99; text-decoration: none; }
+    footer {
+      background-color: #002b5c; color: white;
+      text-align: center; padding: 10px;
     }
-    .video-card {
-      background: #fff;
-      padding: 10px;
+    /* Course Recording thumbnail */
+    .recording-thumb {
+      max-width: 100%;
+      height: auto;
       border-radius: 8px;
-      width: 300px;
       box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      margin-bottom: 15px;
     }
-    .video-card img {
-      width: 100%;
-      border-radius: 4px;
+    .recording-container {
+      text-align: center;
     }
-    .video-card h4 {
-      margin: 10px 0 5px;
-    }
-    a {
-      color: #2980b9;
-      text-decoration: none;
-    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="header-text">
+        <h1>Dr. Rohan Appasaheb Borgalli</h1>
+        <p>Assistant Professor (Selection Grade), Electronics & Telecommunication Engineering, SAKEC, Mumbai University</p>
+        <p>Email: <a href="mailto:rohan.borgalli@sakec.ac.in">rohan.borgalli@sakec.ac.in</a></p>
+      </div>
+      <div class="header-image">
+        <img src="Rohan_Borgalli_EXTC.jpg" alt="Dr. Rohan Borgalli">
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <button onclick="showSection('profile')">Profile</button>
+    <button onclick="showSection('education')">Education</button>
+    <button onclick="showSection('experience')">Experience</button>
+    <button onclick="showSection('subjects')">Subjects</button>
+    <button onclick="showSection('research')">Research</button>
+    <button onclick="showSection('awards')">Awards</button>
+    <button onclick="showSection('projects')">Projects</button>
+    <button onclick="showSection('courses')">Courses</button>
+    <button onclick="showSection('recording')">Course Recording</button>
+    <button onclick="showSection('contact')">Contact</button>
+  </nav>
+
+  <main>
+    <section id="profile" class="active">
+      <h2>Profile</h2>
+      <p><strong>Date of Birth:</strong> 23/05/1990</p>
+      <p><strong>Languages:</strong> Hindi, Marathi, English, Kannada</p>
+      <p><strong>Mobile:</strong> 9821057992</p>
+      <p><strong>Address:</strong> C-37/70, Mitrata CHS, Gorai 1, Borivli West, Mumbai 400092</p>
+      <p><strong>Areas of Interest:</strong> Machine Learning, Signal Processing, Data Compression & Encryption, IoT, Digital System Design</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>Ph.D. in Electronics Engineering (Machine Learning), Mumbai University, 2025</li>
+        <li>M.Tech in Electronics Engineering (Digital Systems), MNNIT Allahabad, 2013 - Gold Medalist</li>
+        <li>B.E. in Electronics & Telecommunication, RGIT, Mumbai University, 2011</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <p>Assistant Professor at SAKEC since 2014 with 12+ years of teaching & administrative roles, including Program Coordinator, ISO Coordinator, TBI In-Charge, Anti-Ragging Officer, Placement Cell Member.</p>
+    </section>
+
+    <section id="subjects">
+      <h2>Subjects Taught</h2>
+      <ul>
+        <li>Digital System Design & Digital VLSI Design</li>
+        <li>Computer Organization & Architecture</li>
+        <li>Digital Signal & Image Processing</li>
+        <!-- etc. -->
+      </ul>
+    </section>
+
+    <section id="research">
+      <h2>Research & Publications</h2>
+      <!-- content omitted for brevity -->
+      <p>See full list on <a href="https://scholar.google.com/citations?user=8gzkafsAAAAJ" target="_blank">Google Scholar</a></p>
+    </section>
+
+    <section id="awards">
+      <h2>Awards</h2>
+      <ul>
+        <li>Best Researcher Award – Novel Research Academy, 2023</li>
+        <li>IRSD Academic Excellence Award, 2022</li>
+        <!-- etc. -->
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects & Grants</h2>
+      <p>Guided 20+ UG projects in AI, IoT, DL, Healthcare. Incubated 3 startups under SAKEC-TBI.</p>
+    </section>
+
+    <section id="courses">
+      <h2>Courses & Certifications</h2>
+      <p><strong>NPTEL:</strong> Deep Learning (Top 2%), Digital Circuits (Top 1%)</p>
+      <p><strong>Coursera:</strong> CNNs by deeplearning.ai, Emotion AI</p>
+    </section>
+
+    <section id="recording">
+      <h2>Course Recording</h2>
+      ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digital System Design – Open Source Lectures</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; }
+    h1, h2, h3 { color: #2c3e50; }
+    .section { background: #fff; padding: 15px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .videos { display: flex; flex-wrap: wrap; gap: 15px; }
+    .video-card { background: #fff; padding: 10px; border-radius: 8px; width: 300px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
+    .video-card img { width: 100%; border-radius: 4px; }
+    .video-card h4 { margin: 10px 0 5px; }
+    a { color: #2980b9; text-decoration: none; }
   </style>
 </head>
 <body>
@@ -52,154 +175,380 @@
   <div class="section">
     <h2>Subject Overview</h2>
     <p>
-      <strong>Digital System Design</strong> is a core subject for Second Year Electronics and Telecommunication Engineering students. It includes foundational digital electronics concepts: number systems, logic gates, combinational and sequential circuits, memory elements, and programming in VHDL. This course builds the foundation for advanced topics in embedded systems and VLSI design.
+      <strong>Digital System Design</strong> is a core subject for Second Year Electronics and Telecommunication Engineering students. It covers number systems, logic gates, combinational & sequential circuits, memory elements, and VHDL programming—forming the basis for embedded systems & VLSI.
     </p>
   </div>
 
   <div class="section">
     <h2>About the Faculty</h2>
     <p>
-      <strong>Dr. Rohan Appasaheb Borgalli</strong> is an experienced educator specializing in digital systems, embedded systems, and VLSI. His teaching integrates conceptual depth with practical understanding, and his lectures are ideal for academic and self-paced learning environments.
+      <strong>Dr. Rohan Appasaheb Borgalli</strong> specializes in digital systems, embedded systems, and VLSI, combining theory with hands-on examples.
     </p>
   </div>
 
-  <!-- Modules and Labs -->
-
-<!-- Digital System Design Section -->
-<section id="digitalsystem" class="section">
-  <h2>🧭 Digital System Design – Lectures & Practicals</h2>
-  <p>This section includes detailed module-wise lectures and lab practicals on Digital System Design for Second Year EXTC students, taught by Dr. Rohan Appasaheb Borgalli.</p>
-  <div class="videos">
-    <div class="video-card">
-      <a href="#">
-        <img src="https://i.imgur.com/fzV6lIY.png" alt="Module Overview Thumbnail">
-        <h4>📘 View All Modules</h4>
-      </a>
-    </div>
-    <div class="video-card">
-      <a href="#">
-        <img src="https://i.imgur.com/HZ9pU1J.png" alt="Lab Experiments">
-        <h4>🔬 Digital System Design Labs</h4>
-      </a>
-    </div>
-  </div>
-  <p><strong>Explore individual modules and labs via the Digital System tab.</strong></p>
-</section>
-
-<script>
-  const nav = document.querySelector('nav');
-  const digitalBtn = document.createElement('button');
-  digitalBtn.textContent = 'Digital System';
-  digitalBtn.onclick = () => showSection('digitalsystem');
-  nav.appendChild(digitalBtn);
-</script>
-
-  <!-- Module 1: Number Systems and Codes -->
-<div class="section">
-  <h2>📚 Module 1: Number Systems and Codes</h2>
-  <div class="videos">
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/d72b1f01-bb0f-4d10-b4ab-53a65680d183" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 1: Introduction to Digital System Design</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/4e8882ca-5d5b-4ba8-afc9-e4a1f3a17043" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 2: Number Systems</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/02bf36be-771c-49b4-a943-8bb8a3d76757" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 3: Digital Codes</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/1abcdaa9-e193-4399-b357-9c1fc23d0c9a" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 4: Binary Arithmetic</h4></a></div>
-  </div>
-</div>
-
-<!-- Module 2: Logic Family and Logic Gates -->
-<div class="section">
-  <h2>🔌 Module 2: Logic Family and Logic Gates</h2>
-  <div class="videos">
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/05cb1cd3-29d1-4a4f-ba6a-1a19c8700741" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 5: Introduction of Logic Family</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/83c66e91-7a7d-4f77-b98a-b9a5278f6643" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 6: Digital Logic Gates</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/256c099b-fb79-432e-8c2a-59d024c89647" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 7: Boolean Algebra</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/bf54b0bf-3e11-4384-b618-c76cf2056c37" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 8: TTL Logic Families</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/72b404b0-0e15-468c-bef5-2e3f82d21e96" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 9: CMOS Logic Families</h4></a></div>
-  </div>
-</div>
-
-<!-- Module 3: Combinational Logic Circuits -->
-<div class="section">
-  <h2>🔗 Module 3: Combinational Logic Circuits</h2>
-  <div class="videos">
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/34955fc0-51d2-4bbe-a9f0-4f26f496f1e6" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 10: SOP and POS representation</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/d0d62a90-524c-4397-8cc0-729c25238bdf" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 11: K-Map (Part I)</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/561c8ce7-1fda-423a-836c-1b286c9dd4ed" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 12: K-Map (Part II)</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/c86a4240-6a13-48a0-be5c-9ec9360059a3" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 13: Quine McCluskey</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/9a76af38-4ae3-4985-bbd8-8247b16898b4" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 14: Half & Full Adder</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/4137259c-da22-4f2e-a68f-de1b3cc4516b" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 15: Half & Full Subtractor</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/534b28b2-6f84-46ba-8332-d3b0078ceb47" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 16: Carry Lookahead Adder</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/568d3dc7-e9f7-49f9-bca6-4902eafe94f8" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 17: BCD Adder & Comparator</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/b269ad06-e6f8-4ef7-8d89-d95967a36449" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 18: Multiplexer</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/7e19609e-d25f-4510-8e9c-ab5a4ba9e9a8" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 19: De-Multiplexer</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/65c6eb46-4b4f-4fd2-80ba-105322543a4b" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 20: Encoder</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/b68d5adc-5b74-44be-92b3-1b175eb35268" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 21: Decoder</h4></a></div>
-  </div>
-</div>
-
-<!-- Module 4: Sequential Logic Circuits -->
-<div class="section">
-  <h2>⏱ Module 4: Sequential Logic Circuits</h2>
-  <div class="videos">
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/d23e2211-7e87-4afc-b744-ea851b823bc5" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 22: Sequential Logic Circuit Overview (Part-I)</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/9641dba0-0ac1-4b3d-bc92-86ede71d2a3c" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 22: Sequential Logic Circuit Overview (Part-II)</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/3117b990-f1e5-49ff-bcef-91267d4a6b80" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 23: Types of Flip-Flops</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/4d9591d2-6fad-450b-800b-df6264c14292" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 24: Flip-Flop Conversion (Part-I)</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/556c04dd-4259-4308-91bd-6494e125add2" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 24: Flip-Flop Conversion (Part-II)</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/110edd41-02a8-44ac-8caf-f797c73c95bf" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 25: Shift Register</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/4bb3412c-e3cf-4a4c-a1d1-d128deaee71a" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 26: Counters Overview</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/3a8ca034-2163-4c1f-864d-94f30ee45913" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 27: Asynchronous Counter</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/f3a6960f-9342-48ea-bae0-1c6725a4df2a" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 28: Synchronous Counter</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/5b0d40aa-474e-4436-8473-461deecb4e37" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 29: BCD Counter</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/6bc0e2cd-a728-4ddc-833a-8d4cdca635a4" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 30: Application of Sequential Circuits (Part-I)</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/6bc0e2cd-a728-4ddc-833a-8d4cdca635a4" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 31: Application of Sequential Circuits (Part-II)</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/e13b41e2-7e97-47a3-b7ef-bf029c2784c5" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 32: Analysis of Sequential Circuits</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/aadd63bc-40fd-4de5-a3dc-3fd6686c928d" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 33: Introduction to Mealy and Moore Machine</h4></a></div>
-  </div>
-</div>
-
-<!-- Module 5: Memories and PLDs -->
-<div class="section">
-  <h2>💾 Module 5: Memories and Programmable Logic Devices</h2>
-  <div class="videos">
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/57358667-6739-4c7d-b0f9-ed17dd52a5fb" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 34: Classification and Characteristics of Memory</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/6716d013-2b93-4f93-8dc5-e6bd8dc0f9fc" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 35: ROM & Characteristics</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/040dac5f-099c-4396-bb60-02d1967ddf37" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 36: Programmable Logic Devices (PLDs)</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/580367bb-9e7a-4768-87a3-b3b3618e6048" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 37: Programmable Logic Array (PLA)</h4></a></div>
-  </div>
-</div>
-
-<!-- Module 6: VHDL -->
-<div class="section">
-  <h2>💡 Module 6: Introduction to VHDL</h2>
-  <div class="videos">
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/2233d499-73bb-4391-9ad0-1bbd29a13431" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 38: Introduction to VHDL</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/70c7c32d-ae9e-40a0-9f36-215b981bb845" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lecture 39: VHDL Programming</h4></a></div>
-  </div>
-</div>
-
-<!-- Labs -->
-<div class="section">
-  <h2>🧪 Digital System Design Laboratory</h2>
-  <div class="videos">
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/e59337ff-9995-462b-92af-ac9ac2525ff9" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lab 1: Realization of Logic Gates</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/80273dc0-805d-4596-9cde-7636d771a940" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lab 2: Universal Gates</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/e60317b9-a615-4817-b575-ae6b9eb339eb" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lab 3: Adder and Subtractor</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/11de914e-2224-4037-bf45-df83bceff3e4" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lab 4: Magnitude Comparator</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/0010410a-be6b-42b4-b98e-6f484c893793" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lab 5: 8:1 Mux and 3:8 Decoder</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/647440d2-7ac6-4827-8aef-0002b3970cf0" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lab 6: JK & D Flip-Flop, Decade Counter</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/72a0c9b0-a68c-445f-aa1b-4f0f3d7c075a" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lab 7: Full Adder and 4:1 Mux using VHDL</h4></a></div>
-    <div class="video-card"><a href="https://web.microsoftstream.com/video/17ffa3b1-6660-4394-accd-828309c8dea5" target="_blank"><img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg"><h4>Lab 8: Flip-Flop and 3-bit Counter using VHDL</h4></a></div>
-  </div>
-</div>
-
+  <!-- Module 1 -->
   <div class="section">
-    <h2>📄 Profile Page Integration</h2>
-    <p>
-      To include a faculty profile page, create a <code>profile.html</code> and link to it:
-      <br />
-      <a href="profile.html">👤 Faculty Profile</a>
-    </p>
+    <h2>📚 Module 1: Number Systems & Codes</h2>
+    <div class="videos">
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/d72b1f01-bb0f-4d10-b4ab-53a65680d183" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 1">
+          <h4>Lecture 1: Introduction to Digital System Design</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/4e8882ca-5d5b-4ba8-afc9-e4a1f3a17043" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 2">
+          <h4>Lecture 2: Number Systems</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/02bf36be-771c-49b4-a943-8bb8a3d76757" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 3">
+          <h4>Lecture 3: Digital Codes</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/1abcdaa9-e193-4399-b357-9c1fc23d0c9a" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 4">
+          <h4>Lecture 4: Binary Arithmetic</h4>
+        </a>
+      </div>
+    </div>
   </div>
 
+  <!-- Module 2 -->
+  <div class="section">
+    <h2>🔌 Module 2: Logic Families & Gates</h2>
+    <div class="videos">
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/05cb1cd3-29d1-4a4f-ba6a-1a19c8700741" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 5">
+          <h4>Lecture 5: Logic Families</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/83c66e91-7a7d-4f77-b98a-b9a5278f6643" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 6">
+          <h4>Lecture 6: Logic Gates</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/256c099b-fb79-432e-8c2a-59d024c89647" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 7">
+          <h4>Lecture 7: Boolean Algebra</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/bf54b0bf-3e11-4384-b618-c76cf2056c37" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 8">
+          <h4>Lecture 8: TTL Logic Families</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/72b404b0-0e15-468c-bef5-2e3f82d21e96" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 9">
+          <h4>Lecture 9: CMOS Logic Families</h4>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Module 3 -->
+  <div class="section">
+    <h2>🔗 Module 3: Combinational Logic</h2>
+    <div class="videos">
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/34955fc0-51d2-4bbe-a9f0-4f26f496f1e6" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 10">
+          <h4>Lecture 10: SOP & POS</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/d0d62a90-524c-4397-8cc0-729c25238bdf" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 11">
+          <h4>Lecture 11: K-Map I</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/561c8ce7-1fda-423a-836c-1b286c9dd4ed" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 12">
+          <h4>Lecture 12: K-Map II</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/c86a4240-6a13-48a0-be5c-9ec9360059a3" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 13">
+          <h4>Lecture 13: Quine–McCluskey</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/9a76af38-4ae3-4985-bbd8-8247b16898b4" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 14">
+          <h4>Lecture 14: Half & Full Adder</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/4137259c-da22-4f2e-a68f-de1b3cc4516b" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 15">
+          <h4>Lecture 15: Half & Full Subtractor</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/534b28b2-6f84-46ba-8332-d3b0078ceb47" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 16">
+          <h4>Lecture 16: Carry Lookahead Adder</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/568d3dc7-e9f7-49f9-bca6-4902eafe94f8" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 17">
+          <h4>Lecture 17: BCD Adder & Comparator</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/b269ad06-e6f8-4ef7-8d89-d95967a36449" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 18">
+          <h4>Lecture 18: Multiplexer</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/7e19609e-d25f-4510-8e9c-ab5a4ba9e9a8" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 19">
+          <h4>Lecture 19: De-Multiplexer</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/65c6eb46-4b4f-4fd2-80ba-105322543a4b" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 20">
+          <h4>Lecture 20: Encoder</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/b68d5adc-5b74-44be-92b3-1b175eb35268" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 21">
+          <h4>Lecture 21: Decoder</h4>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Module 4 -->
+  <div class="section">
+    <h2>⏱ Module 4: Sequential Logic Circuits</h2>
+    <div class="videos">
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/d23e2211-7e87-4afc-b744-ea851b823bc5" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 22-I">
+          <h4>Lecture 22: Seq. Circuits Overview I</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/9641dba0-0ac1-4b3d-bc92-86ede71d2a3c" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 22-II">
+          <h4>Lecture 22: Seq. Circuits Overview II</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/3117b990-f1e5-49ff-bcef-91267d4a6b80" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 23">
+          <h4>Lecture 23: Flip-Flop Types</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/4d9591d2-6fad-450b-800b-df6264c14292" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 24-I">
+          <h4>Lecture 24: Flip-Flop Conversion I</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/556c04dd-4259-4308-91bd-6494e125add2" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 24-II">
+          <h4>Lecture 24: Flip-Flop Conversion II</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/110edd41-02a8-44ac-8caf-f797c73c95bf" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 25">
+          <h4>Lecture 25: Shift Registers</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/4bb3412c-e3cf-4a4c-a1d1-d128deaee71a" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 26">
+          <h4>Lecture 26: Counters Overview</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/3a8ca034-2163-4c1f-864d-94f30ee45913" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 27">
+          <h4>Lecture 27: Asynchronous Counters</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/f3a6960f-9342-48ea-bae0-1c6725a4df2a" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 28">
+          <h4>Lecture 28: Synchronous Counters</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/5b0d40aa-474e-4436-8473-461deecb4e37" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 29">
+          <h4>Lecture 29: BCD Counters</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/6bc0e2cd-a728-4ddc-833a-8d4cdca635a4" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 30">
+          <h4>Lecture 30: Seq. Circuits Applications I</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/6bc0e2cd-a728-4ddc-833a-8d4cdca635a4" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 31">
+          <h4>Lecture 31: Seq. Circuits Applications II</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/e13b41e2-7e97-47a3-b7ef-bf029c2784c5" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 32">
+          <h4>Lecture 32: Sequential Circuits Analysis</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/aadd63bc-40fd-4de5-a3dc-3fd6686c928d" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 33">
+          <h4>Lecture 33: Mealy & Moore Machines</h4>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Module 5 -->
+  <div class="section">
+    <h2>💾 Module 5: Memories & PLDs</h2>
+    <div class="videos">
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/57358667-6739-4c7d-b0f9-ed17dd52a5fb" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 34">
+          <h4>Lecture 34: Memory Classification</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/6716d013-2b93-4f93-8dc5-e6bd8dc0f9fc" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 35">
+          <h4>Lecture 35: ROM & Characteristics</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/040dac5f-099c-4396-bb60-02d1967ddf37" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 36">
+          <h4>Lecture 36: Programmable Logic Devices</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/580367bb-9e7a-4768-87a3-b3b3618e6048" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 37">
+          <h4>Lecture 37: PLA</h4>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Module 6 -->
+  <div class="section">
+    <h2>💡 Module 6: Introduction to VHDL</h2>
+    <div class="videos">
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/2233d499-73bb-4391-9ad0-1bbd29a13431" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 38">
+          <h4>Lecture 38: Intro to VHDL</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/70c7c32d-ae9e-40a0-9f36-215b981bb845" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lecture 39">
+          <h4>Lecture 39: VHDL Programming</h4>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Laboratory -->
+  <div class="section">
+    <h2>🧪 Digital System Design Lab</h2>
+    <div class="videos">
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/e59337ff-9995-462b-92af-ac9ac2525ff9" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lab 1">
+          <h4>Lab 1: Logic Gates Realization</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/80273dc0-805d-4596-9cde-7636d771a940" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lab 2">
+          <h4>Lab 2: Universal Gates</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/e60317b9-a615-4817-b575-ae6b9eb339eb" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lab 3">
+          <h4>Lab 3: Adder & Subtractor</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/11de914e-2224-4037-bf45-df83bceff3e4" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lab 4">
+          <h4>Lab 4: Magnitude Comparator</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/0010410a-be6b-42b4-b98e-6f484c893793" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lab 5">
+          <h4>Lab 5: 8:1 Mux & 3:8 Decoder</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/647440d2-7ac6-4827-8aef-0002b3970cf0" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lab 6">
+          <h4>Lab 6: JK & D Flip-Flop, Decade Counter</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/72a0c9b0-a68c-445f-aa1b-4f0f3d7c075a" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lab 7">
+          <h4>Lab 7: VHDL – Full Adder & 4:1 Mux</h4>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://web.microsoftstream.com/video/17ffa3b1-6660-4394-accd-828309c8dea5" target="_blank">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg" alt="Lab 8">
+          <h4>Lab 8: VHDL – Flip-Flop & 3-bit Counter</h4>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:rohanborgalli111@gmail.com">rohanborgalli111@gmail.com</a></p>
+      <p>Phone: 9821057992</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/rohan-borgalli/" target="_blank">linkedin.com/in/rohan-borgalli</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dr. Rohan Appasaheb Borgalli. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
 </body>
 </html>
